@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#heroSocial {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+#heroSocial > li {
+  width: 4.5rem;
+  height: 4.5rem;
+  list-style: none;
+  font-size: 1.5rem;
+  color: #fff;
+  transition: all 0.3s ease;
+  margin: 8px;
+}
+
+#discord {
+  width: 4.5rem;
+  border-radius: 50%;
+}
+
+.techStack {
+  width: 90px;
+  height: 90px;
+  margin: 1rem;
+}
+
+.techStack1 > img {
+  width: 100px;
+  height: 100px;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+}
+
+.techStack:hover .tooltip-text {
+  visibility: visible;
+}
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #1f3b71;
+  color: white;
+  text-decoration: none;
+  border-radius: 0.25rem;
+}
+
+.btn:hover {
+  background-color: #2c5282;
+}
