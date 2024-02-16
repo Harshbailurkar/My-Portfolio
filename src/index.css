@@ -22,7 +22,14 @@
   width: 4.5rem;
   border-radius: 50%;
 }
-
+#gmail {
+  width: 4rem;
+  padding-top: 5px;
+}
+#gmail2 {
+  width: 2rem;
+  padding-top: 5px;
+}
 .techStack {
   width: 90px;
   height: 90px;

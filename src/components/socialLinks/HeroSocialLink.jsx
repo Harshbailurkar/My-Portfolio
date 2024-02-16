@@ -2,7 +2,7 @@ import React from "react";
 import github from "../../Portfolio Vector Images/social media/github.png";
 import linkedin from "../../Portfolio Vector Images/social media/LinkedIn.png";
 import instagram from "../../Portfolio Vector Images/social media/insta.png";
-
+import gmail from "../../Portfolio Vector Images/gmail.svg";
 export default function HeroSocialLink() {
   return (
     <div className="p-3">
@@ -34,6 +34,11 @@ export default function HeroSocialLink() {
               alt=""
               id="discord"
             />
+          </a>
+        </li>
+        <li>
+          <a href="mailto:harshbailurkar@gmail.com" target="_blank">
+            <img src={gmail} alt="" id="gmail" />
           </a>
         </li>
       </ul>

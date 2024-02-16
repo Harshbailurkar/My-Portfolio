@@ -1,22 +1,12 @@
-// import html from "../../Portfolio Vector Images/technology/html5.png";
-// import css from "../../Portfolio Vector Images/technology/css.png";
-// import javascript from "../../Portfolio Vector Images/technology/javascript.png";
-// import react from "../../Portfolio Vector Images/technology/react.png";
-// import tailwind from "../../Portfolio Vector Images/technology/tailwind.png";
-// import bootstrap from "../../Portfolio Vector Images/technology/bootstrap.png";
-// import nodejs from "../../Portfolio Vector Images/technology/nodejs.png";
-// import express from "../../Portfolio Vector Images/technology/express.png";
-// import mongodb from "../../Portfolio Vector Images/technology/mongodb.png";
-// import c from "../../Portfolio Vector Images/technology/c.png";
-// import java from "../../Portfolio Vector Images/technology/java.png";
-// import python from "../../Portfolio Vector Images/technology/python.png";
 export default function SkillSet() {
   return (
-    <div>
-      <h1 className="text-center font-semibold text-5xl p-4">Tech Stack</h1>
-      <p className="flex flex-row flex-wrap mx-32 m-10">
+    <div className="m-5 sm:m-10">
+      <h1 className="text-center font-semibold text-4xl sm:text-5xl mb-5">
+        Tech Stack
+      </h1>
+      <p className="flex flex-wrap justify-center items-center mx-5 sm:mx-32">
         <img
-          className="m-1 min-w-24"
+          className="m-1 min-w-24 "
           src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&amp;logo=javascript&amp;logoColor=%23F7DF1E"
           alt="JavaScript"
         />{" "}

@@ -1,5 +1,5 @@
 import React from "react";
-import { Fade } from "react-awesome-reveal";
+import { Fade, Slide } from "react-awesome-reveal";
 import img1 from "../../../Portfolio Vector Images/vector2.svg";
 import img2 from "../../../Portfolio Vector Images/Cloud.svg";
 import img3 from "../../../Portfolio Vector Images/UI-UX.svg";
@@ -42,40 +42,38 @@ const data = [
 
 export default function WhatIDo() {
   return (
-    <div className="m-36">
-      <h1 className="text-center font-semibold text-6xl">What I Do</h1>
+    <div className="m-5 sm:m-10">
+      <h1 className="text-center font-semibold text-4xl sm:text-6xl mb-5">
+        What I Do
+      </h1>
       <ul>
         {data.map((item, index) => (
-          <Fade
+          <Slide
             key={index}
-            ascade
-            damping={0.1}
-            {...(index % 2 === 0 ? { left: true } : { right: true })}
-            style={{ opacity: 0.9, transition: "opacity 1s ease-in-out" }}
+            triggerOnce
+            direction={index % 2 === 0 ? "left" : "right"}
           >
             <li
-              className={`flex items-center ${
-                index % 2 === 0
-                  ? "justify-between"
-                  : "justify-between md:flex-row-reverse"
+              className={`flex flex-col sm:flex-row items-center justify-between ${
+                index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
               }`}
             >
-              <div className="w-full">
+              <div className="w-full sm:w-1/2">
                 <img src={item.imgUrl} alt="" className="w-full" />
               </div>
-              <div className="w-1/2 md:w-3/4">
-                <h1 className="text-center font-normal text-4xl p-3">
+              <div className="w-full sm:w-1/2 md:w-3/4 p-3 mb-3">
+                <h1 className="text-center font-medium text-4xl sm:text-4xl mb-2">
                   {item.Title}
                 </h1>
                 {item.TechStack}
-                <ul className="p-5 text-xl">
+                <ul className="p-3 text-2xl">
                   {Object.values(item.Description).map((desc, index) => (
                     <li key={index}>{desc}</li>
                   ))}
                 </ul>
               </div>
             </li>
-          </Fade>
+          </Slide>
         ))}
       </ul>
     </div>

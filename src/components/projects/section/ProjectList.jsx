@@ -3,9 +3,12 @@ import projectData from "./projectData";
 export default function ProjectList() {
   return (
     <>
-      <div className="flex flex-wrap justify-center gap-8 px-10 mb-12">
+      <div className="flex flex-wrap justify-center gap-4 lg:gap-8 px-4 lg:px-10 mb-12">
         {projectData.map((data) => (
-          <div key={data.id} className="w-1/4 p-4   shadow-md bg-sky">
+          <div
+            key={data.id}
+            className="w-full lg:w-1/4 p-4   shadow-md bg-sky text-purple"
+          >
             <div className="flex flex-col h-full">
               <div className="font-semibold text-3xl">
                 <h1>{data.Title}</h1>
