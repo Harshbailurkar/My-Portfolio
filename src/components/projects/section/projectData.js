@@ -4,7 +4,7 @@ export default [
     Title: "My Portfolio",
     Des: "Portfolio site showcasing my skills in React: A dynamic display of my capabilities, coded using React's power to exhibit my expertise in frontend development.",
     codeLink: "https://github.com/Harshbailurkar/My-Portfolio.git",
-    demoLink: "",
+    demoLink: "https://master-portfolio-harshbailurkar.netlify.app/",
   },
   {
     id: 2,
@@ -18,14 +18,14 @@ export default [
     Title: "BlogSpot",
     Des: "Blogspot is a fullStack blog platform utilizing Express for backend, Ejs for frontend, and MongoDB for data storage. It allows users to create, read, update, and delete blog posts, offering a complete blogging solution.",
     codeLink: "https://github.com/Harshbailurkar/BlogSpot.git",
-    demoLink: "",
+    demoLink: "#",
   },
   {
     id: 4,
     Title: "P-editor",
     Des: "Python PDF-to-Text Extractor: Effortlessly extract text from PDF files using Python, simplifying document handling and analysis.",
     codeLink: "https://github.com/Harshbailurkar/Mini_Project1-PEditor.git",
-    demoLink: "",
+    demoLink: "#",
   },
   {
     id: 5,
