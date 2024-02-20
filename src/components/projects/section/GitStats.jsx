@@ -5,9 +5,9 @@ export default function GitStats() {
       <div className="m-10">
         <div className="w-full md:flex md:justify-center md:space-x-4">
           <img
-            src="http://ghchart.rshah.org/1F3B71/Harshbailurkar"
+            src="http://ghchart.rshah.org/006400/Harshbailurkar"
             alt="Harshbailurkar's Github chart"
-            className="w-full md:w-auto md:mr-2 mb-2 md:mb-0"
+            className="w-full md:w-auto md:mr-2 mb-2 md:mb-0 bg-black rounded-lg p-3 border-white"
           />
           <img
             src="https://github-readme-stats.vercel.app/api?username=harshbailurkar&show_icons=true&count_private=true&hide=contribs,issues&theme=dark"

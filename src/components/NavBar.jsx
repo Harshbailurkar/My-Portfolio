@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import logo from "../Portfolio Vector Images/signature-black-removebg-preview.png";
 import logo2 from "../Portfolio Vector Images/signature-white-Photoroom.png-Photoroom.png";
 import { NavLink } from "react-router-dom";
@@ -8,6 +8,17 @@ import { MdOutlineLightMode, MdDarkMode } from "react-icons/md";
 export default function NavBar() {
   const [isNavOpen, setIsNavOpen] = useState(true);
   const [isDark, setIsDark] = useState(false);
+
+  useEffect(() => {
+    if (isDark) {
+      document.body.classList.remove("light");
+      document.body.classList.add("dark");
+    } else {
+      document.body.classList.remove("dark");
+      document.body.classList.add("light");
+    }
+  }, [isDark]);
+
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
   };
@@ -15,13 +26,6 @@ export default function NavBar() {
   const changeTheme = () => {
     setIsDark(!isDark);
   };
-  if (isDark) {
-    document.body.classList.remove("light");
-    document.body.classList.add("dark");
-  } else {
-    document.body.classList.remove("dark");
-    document.body.classList.add("light");
-  }
 
   return (
     <div className="flex flex-col lg:flex-row items-center px-4">

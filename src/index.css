@@ -70,3 +70,7 @@
 .btn:hover {
   background-color: #2c5282;
 }
+
+.darkmode {
+  background: linear-gradient(90deg, #141e30 0%, #243b55 100%);
+}
