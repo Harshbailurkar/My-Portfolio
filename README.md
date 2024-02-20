@@ -4,5 +4,5 @@ Figma Design File : <a href="https://www.figma.com/file/u0f5Ctp80px9VKy0apgibu/P
 
 This is react Project. created using Vite.
 
-to run locally : npm install 
+to run locally : npm install  <br/>
                  npm run dev
