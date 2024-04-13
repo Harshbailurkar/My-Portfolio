@@ -2,6 +2,7 @@ import React from "react";
 import HeroImg from "../../../Portfolio Vector Images/Hero-Img.svg";
 import HeroSocialLink from "../../socialLinks/HeroSocialLink";
 import arrow from "../../../Portfolio Vector Images/right-arrow.png";
+import { Blurhash } from "react-blurhash";
 
 export default function Hero() {
   return (
@@ -10,7 +11,7 @@ export default function Hero() {
         <h1 className="text-4xl md:text-6xl font-semibold text-center">
           Harsh Ramesh Bailurkar
         </h1>
-        <p className="text-xl md:text-3xl pt-5 text-center text-zinc-500">
+        <p className="text-xl md:text-2xl pt-5 text-center text-zinc-500">
           Welcome to a realm where web development transcends boundaries,
           shaping not just pages but societal landscapes. I'm on a mission to
           architect digital ecosystems that aren't just functional; they're
