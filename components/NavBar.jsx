@@ -50,7 +50,7 @@ export default function NavBar() {
             className={({ isActive }) =>
               isActive
                 ? "font-bold underline underline-offset-8"
-                : "text-gray-700 hover:text-black"
+                : "text-gray-700 "
             }
           >
             Home
@@ -62,7 +62,7 @@ export default function NavBar() {
             className={({ isActive }) =>
               isActive
                 ? "font-bold underline underline-offset-8"
-                : "text-gray-700 hover:text-black"
+                : "text-gray-700 "
             }
           >
             About
@@ -74,7 +74,7 @@ export default function NavBar() {
             className={({ isActive }) =>
               isActive
                 ? "font-bold underline underline-offset-8"
-                : "text-gray-700 hover:text-black"
+                : "text-gray-700 "
             }
           >
             Projects
@@ -86,7 +86,7 @@ export default function NavBar() {
             className={({ isActive }) =>
               isActive
                 ? "font-bold underline underline-offset-8"
-                : "text-gray-700 hover:text-black"
+                : "text-gray-700 "
             }
           >
             Contact Me
