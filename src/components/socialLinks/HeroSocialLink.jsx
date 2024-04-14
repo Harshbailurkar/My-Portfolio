@@ -28,7 +28,7 @@ export default function HeroSocialLink() {
           </a>
         </li>
         <li>
-          <a href="https://discord.gg/WtykRexT" target="_blank">
+          <a href="https://discord.gg/EjPVnhmp" target="_blank">
             <img
               src="https://w7.pngwing.com/pngs/580/137/png-transparent-discord-logo-thumbnail.png"
               alt=""
