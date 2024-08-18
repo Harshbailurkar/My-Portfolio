@@ -14,7 +14,7 @@ const data = [
     TechStack: <FullStack />,
     Description: {
       1: "⚡ React-Redux Maestro for Responsive Frontends",
-      2: "⚡Backend Architect: Node.js & Express Luminary",
+      2: "⚡Backend Architect: Node.js,Express & python Luminary",
       3: "⚡Database Dynamo: MongoDB, MySQL, Firebase",
     },
   },

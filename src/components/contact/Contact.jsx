@@ -6,7 +6,7 @@ import { Fade } from "react-awesome-reveal";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import swal from "sweetalert";
-import resume from "./Resume.pdf";
+import resume from "/Resume.pdf";
 
 export default function Contact() {
   const form = useRef();
@@ -50,7 +50,7 @@ export default function Contact() {
             />
             <a
               href={resume}
-              download="Resume.pdf"
+              download="HarshBailurkarResume.pdf"
               className="block text-center mt-4 md:mt-0 text-purple-600 btn"
             >
               See My Resume

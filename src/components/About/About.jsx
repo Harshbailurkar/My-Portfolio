@@ -18,7 +18,7 @@ export default function About() {
               </h1>
               <p className="text-left font-normal text-2xl p-3">
                 Hey there, I'm Harsh Bailurkar, a passionate Computer Science
-                and Engineering student currently in my 6th semester. My
+                and Engineering student currently in my 7th semester. My
                 enthusiasm lies in the world of development and problem-solving.
                 I thrive on diving into coding challenges and crafting solutions
                 that make a real difference. Eager to learn and grow in this
@@ -36,7 +36,7 @@ export default function About() {
             </h1>
             <p className="text-left font-normal text-2xl p-3">
               Hey there, I'm Harsh Bailurkar, a passionate Computer Science and
-              Engineering student currently in my 6th semester. My enthusiasm
+              Engineering student currently in my 7th semester. My enthusiasm
               lies in the world of development and problem-solving. I thrive on
               diving into coding challenges and crafting solutions that make a
               real difference. Eager to learn and grow in this ever-evolving
@@ -69,7 +69,7 @@ export default function About() {
               <div className="p-2 rounded-t-lg">
                 <ul className="p-1">
                   <li className="p-1">
-                    ⚡Maintaining a strong CGPA of <b>8.3</b> as of the 5th
+                    ⚡Maintaining a strong CGPA of <b>8.3</b> as of the 6th
                     semester.
                   </li>
                   <li className="p-1">

@@ -3,7 +3,7 @@ import HeroImg from "../../../Portfolio Vector Images/Hero-Img.svg";
 import HeroSocialLink from "../../socialLinks/HeroSocialLink";
 import arrow from "../../../Portfolio Vector Images/right-arrow.png";
 import { Blurhash } from "react-blurhash";
-
+import Resume from "/Resume.pdf";
 export default function Hero() {
   return (
     <div className="flex flex-col md:flex-row">
@@ -26,6 +26,17 @@ export default function Hero() {
               target="_blank"
             >
               <span> My Code Tails</span>
+              <img src={arrow} alt="" className="ml-2" />
+            </a>
+          </button>
+          <button className="bg-purple p-2 md:p-4 m-2 rounded-xl transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
+            <a
+              href={Resume}
+              download="HarshBailurkarResume.pdf"
+              className="flex items-center text-white"
+              target="_blank"
+            >
+              <span> Resume</span>
               <img src={arrow} alt="" className="ml-2" />
             </a>
           </button>
