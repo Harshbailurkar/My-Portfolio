@@ -2,9 +2,10 @@ import React from "react";
 import HeroImg from "../../../Portfolio Vector Images/Hero-Img.svg";
 import HeroSocialLink from "../../socialLinks/HeroSocialLink";
 import arrow from "../../../Portfolio Vector Images/right-arrow.png";
-import { Blurhash } from "react-blurhash";
+
 import Resume from "/Resume.pdf";
 export default function Hero() {
+  const isDark = document.body.classList.contains("dark");
   return (
     <div className="flex flex-col md:flex-row">
       <div className="md:w-1/2 p-5 md:p-10 pt-10 md:pt-20 pr-0 order-2 md:order-1">
@@ -43,7 +44,11 @@ export default function Hero() {
         </section>
       </div>
       <div className="md:w-1/2 order-1 md:order-2">
-        <img src={HeroImg} alt="" className="p-5" />
+        <img
+          src={HeroImg}
+          alt=""
+          className={`p-5 ${isDark ? "imageGrad" : ""}`}
+        />
       </div>
     </div>
   );

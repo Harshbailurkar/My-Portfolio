@@ -86,3 +86,11 @@
   text-decoration: none;
   border-radius: 0.25rem;
 }
+.imageGrad {
+  color: #111;
+  filter: drop-shadow(0 0 100px rgb(55, 67, 37));
+}
+.imageGrad1 {
+  color: #111;
+  filter: drop-shadow(0 0 100px rgb(55, 67, 37));
+}

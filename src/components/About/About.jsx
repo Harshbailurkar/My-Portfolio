@@ -4,31 +4,45 @@ import Education from "../../Portfolio Vector Images/Education.svg";
 import Certificate from "./certificates/Certificate";
 import SkillSet from "./SkillSet";
 import { Fade } from "react-awesome-reveal";
-
+import { Helmet } from "react-helmet";
 export default function About() {
+  const isDark = document.body.classList.contains("dark");
   return (
     <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>About Harsh Bailurkar</title>
+        <link rel="canonical" href="http://mysite.com/example" />
+      </Helmet>
       <Fade triggerOnce>
         <div className="flex flex-col lg:flex-row p-4 pt-9">
           <div className="w-full lg:w-1/2 lg:pr-8">
-            <img src={bannerImg} alt="" className="w-full lg:hidden" />
+            <img
+              src={bannerImg}
+              alt=""
+              className={`w-full lg:hidden ${isDark ? "imageGrad" : ""}`}
+            />
             <div className="hidden lg:block lg:ml-20 lg:mt-10">
               <h1 className="text-center lg:text-left font-semibold text-5xl p-4">
                 Know Who I’m
               </h1>
               <p className="text-left font-normal text-2xl p-3">
-                Hey there, I'm Harsh Bailurkar, a passionate Computer Science
-                and Engineering student currently in my 7th semester. My
-                enthusiasm lies in the world of development and problem-solving.
-                I thrive on diving into coding challenges and crafting solutions
-                that make a real difference. Eager to learn and grow in this
-                ever-evolving field, I'm driven by the possibilities of
-                technology and its power to shape a better tomorrow.
+                Hey there, I'm Harsh Bailurkar, a passionate Final Year Computer
+                Science and Engineering student. My enthusiasm lies in the world
+                of development and problem-solving. I thrive on diving into
+                coding challenges and crafting solutions that make a real
+                difference. Eager to learn and grow in this ever-evolving field,
+                I'm driven by the possibilities of technology and its power to
+                shape a better tomorrow.
               </p>
             </div>
           </div>
           <div className="w-full lg:w-1/2 lg:pl-8">
-            <img src={bannerImg} alt="" className="hidden lg:block w-full" />
+            <img
+              src={bannerImg}
+              alt=""
+              className={`hidden lg:block w-full ${isDark ? "imageGrad" : ""}`}
+            />
           </div>
           <div className="lg:hidden sm:block">
             <h1 className="text-center lg:text-left font-semibold text-5xl p-4">
@@ -48,7 +62,11 @@ export default function About() {
 
         <div className="flex flex-col lg:flex-row p-4 pt-9 mx-10">
           <div className="w-full lg:w-1/2">
-            <img src={Education} alt="" className="w-2/3 mx-auto" />
+            <img
+              src={Education}
+              alt=""
+              className={`w-2/3 mx-auto ${isDark ? "imageGrad1" : ""}`}
+            />
           </div>
           <div className="w-full lg:w-1/2 flex flex-col justify-center p-4">
             <h1 className="text-center font-semibold text-5xl p-4">

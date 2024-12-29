@@ -1,18 +1,24 @@
 import projectData from "./projectData";
-
+import React from "react";
 export default function ProjectList() {
+  const isDark = document.body.classList.contains("dark");
+
   return (
     <>
-      <div className="flex flex-wrap justify-center gap-4 lg:gap-8 px-4 lg:px-10 mb-12">
+      <div className="flex flex-wrap justify-center gap-4 lg:gap-8 px-4 lg:px-10 mb-12 ">
         {projectData.map((data) => (
           <div
             key={data.id}
-            className="w-full lg:w-1/4 p-4   shadow-md bg-sky text-purple"
+            className={`w-full lg:w-1/4 p-4 rounded-lg   shadow-md ${
+              isDark ? "bg-purple text-white" : "bg-sky text-purple"
+            } `}
           >
             <div className="flex flex-col h-full">
               <div className="font-semibold text-3xl">
                 <h1>{data.Title}</h1>
               </div>
+              <br />
+              <img src={data.imgUrl} alt="" />
               <div className=" text-gray-600 mt-2 flex-grow text-lg">
                 {data.Des}
               </div>

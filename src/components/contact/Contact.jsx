@@ -7,6 +7,7 @@ import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import swal from "sweetalert";
 import resume from "/Resume.pdf";
+import { Helmet } from "react-helmet";
 
 export default function Contact() {
   const form = useRef();
@@ -40,6 +41,11 @@ export default function Contact() {
 
   return (
     <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Contact Harsh Bailurkar</title>
+        <link rel="canonical" href="http://mysite.com/example" />
+      </Helmet>
       <div className="flex flex-col md:flex-row md:w-full p-5 md:p-10 pt-10 md:pt-20  order-2 md:order-1">
         <Fade triggerOnce>
           <div className="md:mr-20 mb-10 md:mb-0 flex flex-col justify-center">

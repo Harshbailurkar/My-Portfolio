@@ -14,7 +14,7 @@ const data = [
     TechStack: <FullStack />,
     Description: {
       1: "⚡ React-Redux Maestro for Responsive Frontends",
-      2: "⚡Backend Architect: Node.js,Express & python Luminary",
+      2: "⚡Backend Architect: Node.js,Express,Springboot & Django Luminary",
       3: "⚡Database Dynamo: MongoDB, MySQL, Firebase",
     },
   },
@@ -41,6 +41,7 @@ const data = [
 ];
 
 export default function WhatIDo() {
+  const isDark = document.body.classList.contains("dark");
   return (
     <div className="m-5 sm:m-10">
       <h1 className="text-center font-semibold text-4xl sm:text-6xl mb-5">
@@ -59,7 +60,11 @@ export default function WhatIDo() {
               }`}
             >
               <div className="w-full sm:w-1/2">
-                <img src={item.imgUrl} alt="" className="w-full" />
+                <img
+                  src={item.imgUrl}
+                  alt=""
+                  className={`w-full ${isDark ? "imageGrad1" : ""}`}
+                />
               </div>
               <div className="w-full sm:w-1/2 md:w-3/4 p-3 mb-3">
                 <h1 className="text-center font-medium text-4xl sm:text-4xl mb-2">
